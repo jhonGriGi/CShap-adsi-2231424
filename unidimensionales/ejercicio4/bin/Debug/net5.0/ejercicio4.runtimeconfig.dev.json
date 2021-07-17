@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/darwin/.dotnet/store/|arch|/|tfm|",
+      "/home/darwin/.nuget/packages"
+    ]
+  }
+}

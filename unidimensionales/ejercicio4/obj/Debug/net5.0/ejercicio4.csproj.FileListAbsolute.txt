@@ -1,0 +1,16 @@
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4.deps.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4.runtimeconfig.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4.runtimeconfig.dev.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ref/ejercicio4.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/bin/Debug/net5.0/ejercicio4.pdb
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.csproj.AssemblyReference.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.GeneratedMSBuildEditorConfig.editorconfig
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.AssemblyInfoInputs.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.AssemblyInfo.cs
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.csproj.CoreCompileInputs.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ref/ejercicio4.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.pdb
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio4/obj/Debug/net5.0/ejercicio4.genruntimeconfig.cache

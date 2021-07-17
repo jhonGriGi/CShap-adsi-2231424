@@ -1,0 +1,16 @@
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7.deps.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7.runtimeconfig.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7.runtimeconfig.dev.json
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ref/ejercicio7.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/bin/Debug/net5.0/ejercicio7.pdb
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.csproj.AssemblyReference.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.GeneratedMSBuildEditorConfig.editorconfig
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.AssemblyInfoInputs.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.AssemblyInfo.cs
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.csproj.CoreCompileInputs.cache
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ref/ejercicio7.dll
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.pdb
+/home/darwin/Desktop/archivos/unidimensionales/ejercicio7/obj/Debug/net5.0/ejercicio7.genruntimeconfig.cache
