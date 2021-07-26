@@ -25,6 +25,7 @@ namespace ejercicio5
               respuesta = "No";
             }
           }
+          
           bool resultado = element.Equals(respuesta);
           if(resultado){
             Console.WriteLine("El elemento se encuentra en la posicion: " + posicion + " del elemento");

@@ -1,0 +1,16 @@
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo.deps.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo.runtimeconfig.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo.runtimeconfig.dev.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ref/ejemplo.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/bin/Debug/net5.0/ejemplo.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.csproj.AssemblyReference.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.GeneratedMSBuildEditorConfig.editorconfig
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.AssemblyInfoInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.AssemblyInfo.cs
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.csproj.CoreCompileInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ref/ejemplo.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejemplo/obj/Debug/net5.0/ejemplo.genruntimeconfig.cache

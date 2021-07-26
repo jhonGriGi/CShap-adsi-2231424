@@ -11,7 +11,7 @@ namespace ejercicio3
 
       double[] valoresTotales = new double[15];
 
-      for(int i = 0; i < valoresTotales.Length; i++){
+      for(int i = 0, length = valoresTotales.Length; i < length; i++){
         Console.WriteLine("Ingrese el valor de: " + (i+1));
         _ = double.TryParse(Console.ReadLine(), out valoresTotales[i]);
       }
@@ -19,14 +19,13 @@ namespace ejercicio3
       int contNegativo = 0, contCeros = 0, contPositivos = 0;
       double sumNegativos = 0, sumCeros = 0, sumPositivos = 0;
 
-      for(int i = 0; i < valoresTotales.Length; i++){
+      for(int i = 0, length = valoresTotales.Length; i < length; i++){
         if(valoresTotales[i] < 0){
           contNegativo++;
           sumNegativos += valoresTotales[i];
         }
         else if(valoresTotales[i] == 0){
           contCeros++;
-          sumCeros += valoresTotales[i];
         }
         else{
           contPositivos++;

@@ -32,6 +32,7 @@ namespace ejercicio7
         Console.WriteLine("Ingrese el sueldo del empleado: " + (i+1));
         _ = double.TryParse(Console.ReadLine(), out sueldoEmpleados[i]);
       }
+
       int posicion = 0;
       double mayorSueldo = 0;
       for(int i = 0; i < sueldoEmpleados.Length; i++){
