@@ -1,0 +1,16 @@
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1.deps.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1.runtimeconfig.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1.runtimeconfig.dev.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ref/ejercicio1.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/bin/Debug/net5.0/ejercicio1.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.csproj.AssemblyReference.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.GeneratedMSBuildEditorConfig.editorconfig
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.AssemblyInfoInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.AssemblyInfo.cs
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.csproj.CoreCompileInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ref/ejercicio1.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/ejercicio1/obj/Debug/net5.0/ejercicio1.genruntimeconfig.cache

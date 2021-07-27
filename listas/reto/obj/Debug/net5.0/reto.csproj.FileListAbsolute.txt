@@ -1,0 +1,16 @@
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto.deps.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto.runtimeconfig.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto.runtimeconfig.dev.json
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/ref/reto.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/bin/Debug/net5.0/reto.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.csproj.AssemblyReference.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.GeneratedMSBuildEditorConfig.editorconfig
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.AssemblyInfoInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.AssemblyInfo.cs
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.csproj.CoreCompileInputs.cache
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/ref/reto.dll
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.pdb
+/home/darwin/Desktop/CShap-adsi-2231424/listas/reto/obj/Debug/net5.0/reto.genruntimeconfig.cache

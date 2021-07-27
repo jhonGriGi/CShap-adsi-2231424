@@ -9,19 +9,36 @@ namespace ejercicio2
             /*Hacer un algoritmo que llene una matriz de 10 * 10 y determine la posición [fila, columna] del número
             mayor almacenado en la matriz. Los números son diferentes.*/
 
-            int[,] mayorValor = {{2,4}, {10, 50}}; // Resultado 2,2
-            int length = mayorValor.Length, condicional = 0;
-            int[] numeroMayor = new int[length];
-            
-            for(int i = 0; i < 2; i++) {
-                for(int j = 0; j < 2; j++) {
-                    if(mayorValor[i,j] > condicional) {
-                        numeroMayor = mayorValor[i,j];
-                    }
+            // inicializando la matriz
+            Console.WriteLine("Ingrese el numero de filas");
+            _ = int.TryParse(Console.ReadLine(), out int filas);
+            Console.WriteLine("Ingrese el numero de columnas");
+            _ = int.TryParse(Console.ReadLine(), out int columnas);
+            int[,] matrizInicial = new int[filas, columnas];
+
+            //Ingresando los datos 
+            for(int i = 0; i < filas; i++) {
+                for(int j = 0; j < columnas; j++) {
+                    Console.WriteLine("Ingrese el valor");
+                    _ = int.TryParse(Console.ReadLine(), out matrizInicial[i, j]);
                 }
             }
 
-            Console.WriteLine("El mayor valor se encuentra en: " + numeroMayor);
+
+            // busqueda del mayor valor
+            int busquedaX = 0, busquedaJ = 0;
+            int mayorValor = 0;
+            for(int i = 0; i < filas; i++){
+                for(int j = 0; j < columnas; j++) {
+                    if(mayorValor < matrizInicial[i,j]) {
+                        mayorValor = matrizInicial[i,j];
+                        busquedaX = i;
+                        busquedaJ = j;
+                    }
+                }
+            }
+            Console.WriteLine("El mayor valor es: "+mayorValor);
+            Console.WriteLine("En la posicion ["+busquedaX+", "+ busquedaJ+"] de la matriz");
         }
     }
 }
