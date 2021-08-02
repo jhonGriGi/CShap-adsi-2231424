@@ -8,33 +8,36 @@ namespace ejercicio1
         static void Main(string[] args)
         {
             // Usando los metodos de listas con arraylist 
-            ArrayList personajesLol = new ArrayList();
+            ArrayList personajes = new ArrayList();
 
             // Agregar elementos
-            personajesLol.Add("Garen");
-            personajesLol.Add("Jhin");
-            personajesLol.Add("Katarina");
-            personajesLol.Add("Nidalee");
-            personajesLol.Add("Sett");
-            personajesLol.Add("Garen");
+            personajes.Add("Garen");
+            personajes.Add("Jhin");
+            personajes.Add("Katarina");
+            personajes.Add("Nidalee");
+            personajes.Add("Sett");
+            personajes.Add("Garen");
 
-            foreach(String personaje in personajesLol){
+            foreach (String personaje in personajes)
+            {
                 Console.WriteLine($"Los personajes son: {personaje}");
             }
             Console.WriteLine("*******************************\n");
 
             // Agregar un elemento en una posicion especifica
-            personajesLol.Insert(1, "Pyke");
+            personajes.Insert(1, "Pyke");
 
-            foreach(String personaje in personajesLol){
+            foreach (String personaje in personajes)
+            {
                 Console.WriteLine($"La lista con el nuevo personaje es: {personaje}");
             }
             Console.WriteLine("*******************************\n");
 
             // Ordenar la lista de forma alfabetica
-            personajesLol.Sort();
+            personajes.Sort();
 
-            foreach(String personaje in personajesLol){
+            foreach (String personaje in personajes)
+            {
                 Console.WriteLine($"La lista ordenada es: {personaje}");
             }
             Console.WriteLine("*******************************\n");
@@ -43,23 +46,25 @@ namespace ejercicio1
             Console.WriteLine("Ingrese un nombre de personaje");
             string busquedaPersonaje = Console.ReadLine();
 
-            if(personajesLol.Contains(busquedaPersonaje)) {
+            if (personajes.Contains(busquedaPersonaje))
+            {
                 Console.WriteLine("El personaje se encuentra en la lista");
             }
-            else {
+            else
+            {
                 Console.WriteLine("El personaje no se encuentra en la lista");
             }
             Console.WriteLine("*******************************\n");
 
-            Console.WriteLine($"El personaje se encuentra en el indice {personajesLol.IndexOf(busquedaPersonaje)}");
+            Console.WriteLine($"El personaje se encuentra en el indice {personajes.IndexOf(busquedaPersonaje)}");
             Console.WriteLine("*******************************\n");
 
             // funcion count 
-            Console.WriteLine($"La lista tiene {personajesLol.Count} en total");
+            Console.WriteLine($"La lista tiene {personajes.Count} en total");
             Console.WriteLine("*******************************\n");
 
             // Borrar la lista
-            personajesLol.Clear();
+            personajes.Clear();
             Console.WriteLine("La lista ha sido borrada");
         }
     }

@@ -36,7 +36,7 @@ namespace reto
             estudiantes.Add("WESNER DAMIAN GARCES LORA");
             estudiantes.Add("YESICA ANDREA GUTIERREZ ESCOBAR");
             
-            // Creando el codigo
+            // Generando variables y array para asignar grupos
             int length = estudiantes.Count, numero = 0;
             int[] numeroAlAzar = new int[length];
 
