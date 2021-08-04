@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/darwin/.dotnet/store/|arch|/|tfm|",
-      "/home/darwin/.nuget/packages"
+      "C:\\Users\\Darwin Grisales\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Darwin Grisales\\.nuget\\packages"
     ]
   }
 }
