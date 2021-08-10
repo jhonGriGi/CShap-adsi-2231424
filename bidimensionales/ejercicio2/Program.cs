@@ -17,8 +17,10 @@ namespace ejercicio2
             int[,] matrizInicial = new int[filas, columnas];
 
             //Ingresando los datos 
-            for(int i = 0; i < filas; i++) {
-                for(int j = 0; j < columnas; j++) {
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < columnas; j++)
+                {
                     Console.WriteLine("Ingrese el valor");
                     _ = int.TryParse(Console.ReadLine(), out matrizInicial[i, j]);
                 }
@@ -26,19 +28,22 @@ namespace ejercicio2
 
 
             // busqueda del mayor valor
-            int busquedaX = 0, busquedaJ = 0;
+            int busquedaX = 0, busquedaY = 0;
             int mayorValor = 0;
-            for(int i = 0; i < filas; i++){
-                for(int j = 0; j < columnas; j++) {
-                    if(mayorValor < matrizInicial[i,j]) {
-                        mayorValor = matrizInicial[i,j];
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < columnas; j++)
+                {
+                    if (mayorValor < matrizInicial[i, j])
+                    {
+                        mayorValor = matrizInicial[i, j];
                         busquedaX = i;
-                        busquedaJ = j;
+                        busquedaY = j;
                     }
                 }
             }
-            Console.WriteLine("El mayor valor es: "+mayorValor);
-            Console.WriteLine("En la posicion ["+busquedaX+", "+ busquedaJ+"] de la matriz");
+            Console.WriteLine("El mayor valor es: " + mayorValor);
+            Console.WriteLine("En la posicion [" + busquedaX + ", " + busquedaY + "] de la matriz");
         }
     }
 }
