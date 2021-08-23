@@ -33,7 +33,7 @@ namespace ejercicio3
                 for(int j = 0; j < 3; j++) {
                     Console.WriteLine($"Ingrese la produccion del turno {j+1}");
                     _ = int.TryParse(Console.ReadLine(), out produccion[i,j]);
-                }
+                }   
             }
 
             int sumaProduccion = 0;
