@@ -1,0 +1,16 @@
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.exe
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.deps.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.runtimeconfig.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.runtimeconfig.dev.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\ref\prueba.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\bin\Debug\net5.0\prueba.pdb
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.csproj.AssemblyReference.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.AssemblyInfoInputs.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.AssemblyInfo.cs
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.csproj.CoreCompileInputs.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\ref\prueba.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.pdb
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO\prueba\obj\Debug\net5.0\prueba.genruntimeconfig.cache

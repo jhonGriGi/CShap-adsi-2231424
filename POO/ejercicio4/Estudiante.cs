@@ -4,10 +4,12 @@ namespace ejercicio4
 {
     class Estudiante
     {
+        // Atributos
         public string nombre { get; set;}
         public double nota1 { get; set; }
         public double nota2 { get; set; }
         public double nota3 { get; set;}
+        // Constructores
         public Estudiante(string nombre, double nota1, double nota2, double nota3)
         {
             this.nombre = nombre;
@@ -15,6 +17,7 @@ namespace ejercicio4
             this.nota2 = nota2;
             this.nota3 = nota3;
         }
+        // Metodos
         public string resultado()
         {
             double suma_total = this.nota1 + this.nota2 + this.nota3;

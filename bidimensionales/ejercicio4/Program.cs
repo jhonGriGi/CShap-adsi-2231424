@@ -35,7 +35,7 @@ pantalla el arreglo de entrada (el cuadro), la suma de cada renglón y la suma d
 
             for(int i = 0; i < filas; i++) {
                 for(int j = 0; j < columnas; j++) {
-                    Console.WriteLine("Ingrese un valor");
+                    Console.WriteLine("Ingrese el valor: ");
                     _ = int.TryParse(Console.ReadLine(), out cuadroMagico[i,j]);
                 }
             }
@@ -78,6 +78,7 @@ pantalla el arreglo de entrada (el cuadro), la suma de cada renglón y la suma d
 
             Console.WriteLine("Filas: ");
             foreach(int item in sumaFilas) {
+                Console.WriteLine($"Total: {item}");
                 if(fila == item) {
                     estadoF = "ok";
                 }
@@ -89,6 +90,7 @@ pantalla el arreglo de entrada (el cuadro), la suma de cada renglón y la suma d
 
             Console.WriteLine("Columnas: ");
             foreach(int item in sumaColum) {
+                Console.WriteLine($"Total: {item}");
                 if(colum == item) {
                     estadoC = "ok";
                 }
@@ -96,6 +98,14 @@ pantalla el arreglo de entrada (el cuadro), la suma de cada renglón y la suma d
                     estadoC = "No";
                     break;
                 }
+            }
+
+            Console.WriteLine("Cuadro magico: ");
+            for(int i = 0; i < Clength; i++) {
+                for(int j = 0; j < Clength; j++)  {
+                    Console.Write(cuadroMagico[i,j]);
+                }
+                Console.WriteLine(" ");
             }
 
             if(sumaDiag == fila) {
