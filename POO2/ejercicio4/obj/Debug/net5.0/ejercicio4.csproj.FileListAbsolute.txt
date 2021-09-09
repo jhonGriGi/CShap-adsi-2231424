@@ -1,0 +1,16 @@
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.exe
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.deps.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.runtimeconfig.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.runtimeconfig.dev.json
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ref\ejercicio4.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\bin\Debug\net5.0\ejercicio4.pdb
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.csproj.AssemblyReference.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.AssemblyInfoInputs.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.AssemblyInfo.cs
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.csproj.CoreCompileInputs.cache
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ref\ejercicio4.dll
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.pdb
+C:\Users\Darwin Grisales\Desktop\CShap-adsi-2231424\POO2\ejercicio4\obj\Debug\net5.0\ejercicio4.genruntimeconfig.cache

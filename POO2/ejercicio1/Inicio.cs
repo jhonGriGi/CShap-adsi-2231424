@@ -13,6 +13,7 @@ namespace ejercicio1
 
             Numero numero = new Numero(limitNum);
             numero.logicNum();
+            numero.showNum();
         }
     }
 }
