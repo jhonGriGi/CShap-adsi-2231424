@@ -28,8 +28,6 @@ namespace ejercicio4
             Console.WriteLine("*****************************");
             Console.WriteLine($"El estudiante {lista_estudiantes[4].nombre} {lista_estudiantes[4].resultado()}");
             Console.WriteLine("*****************************");
-            Console.WriteLine($"El estudiante {lista_estudiantes[5].nombre} {lista_estudiantes[5].resultado()}"); 
-            Console.WriteLine("*****************************");
         }
     }
 }
