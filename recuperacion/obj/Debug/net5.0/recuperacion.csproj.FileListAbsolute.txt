@@ -1,0 +1,16 @@
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.exe
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.deps.json
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.runtimeconfig.json
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.runtimeconfig.dev.json
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.dll
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\ref\recuperacion.dll
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\bin\Debug\net5.0\recuperacion.pdb
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.csproj.AssemblyReference.cache
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.AssemblyInfoInputs.cache
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.AssemblyInfo.cs
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.csproj.CoreCompileInputs.cache
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.dll
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\ref\recuperacion.dll
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.pdb
+C:\Users\darwi\Desktop\workspace\CShap-adsi-2231424\recuperacion\obj\Debug\net5.0\recuperacion.genruntimeconfig.cache
