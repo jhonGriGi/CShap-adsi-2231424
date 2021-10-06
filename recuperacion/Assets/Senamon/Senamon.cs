@@ -15,6 +15,7 @@ namespace recuperacion
         public int Energy { get; set; }
         public string Description { get; set; }
 
+        // se utiliza el constructor para mandar los pokemones al archivo "AsignamentSenamon.cs"
         public Senamon(string name, int lvl, string type, float weight, int health, int attack, int phase)
         {
             this.Name = name;
