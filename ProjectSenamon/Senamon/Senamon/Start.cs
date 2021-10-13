@@ -22,7 +22,7 @@ namespace Senamon
             Trainer trainer;
             AsignamentSenamon _asignamentSenamon = new AsignamentSenamon();
 
-            int cantBatallas;
+            int cantBatallas, respuesta1, respuesta2;
             
             int iterator = 0;
 
@@ -83,6 +83,37 @@ namespace Senamon
 
                 training.TrainingStart();
 
+                Console.WriteLine($"Entrenador {this.listTrainer[0].Name} quieres cambiar un senamon?");
+
+                do
+                {
+                    Console.Write("Ingresa (1) si quieres cambiar o (2) si no: ");
+                    _ = int.TryParse(Console.ReadLine(), out respuesta1);
+
+                    if (respuesta1 <= 0)
+                        Console.WriteLine("Error, vuelve a ingresar el valor");
+                } while (respuesta1 <= 0);
+
+                if (respuesta1 == 1)
+                    this.listTrainer[0].ChangeSenamon();
+                else
+                    Console.WriteLine("Continua en el combate!!!");
+
+                Console.WriteLine($"Entrenador {this.listTrainer[1].Name} quieres cambiar un senamon?");
+
+                do
+                {
+                    Console.Write("Ingresa (1) si quieres cambiar o (2) si no: ");
+                    _ = int.TryParse(Console.ReadLine(), out respuesta2);
+
+                    if (respuesta2 <= 0)
+                        Console.WriteLine("Error, vuelve a ingresar el valor");
+                } while (respuesta2 <= 0);
+
+                if (respuesta2 == 1)
+                    this.listTrainer[1].ChangeSenamon();
+                else
+                    Console.WriteLine("Continua en el combate!!!");
             }
 
             Console.WriteLine($"La cantidad de victorias de {this.listTrainer[0].Name} es: {this.listTrainer[0].WonBattles}");
