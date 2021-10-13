@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace recuperacion
+namespace Senamon
 {
-    class AsignamentSenamon
+    public class AsignamentSenamon
     {
+        // Atributos
         public List<Senamon> listSenamon = new List<Senamon>();
 
-        public AsignamentSenamon() {}
-        // Se Crean los Senamones y se mandan a la lista
-        public void asignamentSenamon()
+        // Constructor
+        public AsignamentSenamon()
         {
             Senamon senamon = new Senamon("Bulbasaur", 1, "Planta", 6.9f, 45, 49, 1);
             listSenamon.Add(senamon);
@@ -24,7 +24,7 @@ namespace recuperacion
 
         }
 
-
+        // Metodos
         public List<Senamon> GetListSenamon()
         {
             return this.listSenamon;
@@ -47,7 +47,5 @@ namespace recuperacion
 
             }
         }
-        
-        
     }
 }
