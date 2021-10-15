@@ -51,6 +51,7 @@ namespace Senamon
 
             for (int i = 0; i < 5; i++)
             {
+                Console.WriteLine("\n------------------------------------------");
                 Console.WriteLine($"Senamon #{i}: {this.VectSenamon[i].Name}");
                 Console.WriteLine("------------------------------------------");
                 Console.WriteLine($"   >>>Name: {this.VectSenamon[i].Name}");
@@ -69,6 +70,8 @@ namespace Senamon
                     Console.WriteLine("Error, vuelve a introducir el valor");
                 
             } while (change < 0 || change > this.VectSenamon.Length);
+            
+            _asignamentSenamon.ShowAsignamentSenamon();
             
             do
             {

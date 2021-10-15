@@ -7,20 +7,27 @@ namespace Senamon
     {
         public Battle() {  }
 
-        public void BattleStart(int random)
+        public void BattleStart()
         {
             Start start = new Start();
             int maxLength = start.GetListTrainer()[0].GetVectSenamon().Length;
 
+            Random random = new Random();
+
+            int numRandom = random.Next(1, 11);
+
             int pokemon1, pokemon2;    
             bool entrenador1Start;      
 
-            if (random % 2 != 0)
+            if (numRandom % 2 != 0)
             {
-                Console.WriteLine($"Entranador {start.GetListTrainer()[0].Name} empieza");
-                    do
+                Console.WriteLine($"Entranador {start.listTrainer[0].Name} empieza");
+
+                start.GetListTrainer()[0].ShowTeamSenamon();
+
+                do
                 {
-                    Console.WriteLine($"Entrenador {start.GetListTrainer()[0].Name}!!!");
+                    Console.WriteLine($"Entrenador {start.listTrainer[0].Name}!!!");
                     Console.Write("Ingresa el pokemon para la batalla: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon1);
 
@@ -29,9 +36,11 @@ namespace Senamon
                     
                 } while (pokemon1 < 0 || pokemon1 > maxLength);
 
+                start.GetListTrainer()[1].ShowTeamSenamon();
+
                 do
                 {
-                    Console.WriteLine($"Entrenador {start.GetListTrainer()[1].Name}!!!");
+                    Console.WriteLine($"Entrenador {start.listTrainer[1].Name}!!!");
                     Console.Write("Ingresa el pokemon para la batalla: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon2);
 
@@ -44,10 +53,10 @@ namespace Senamon
             }
             else 
             {
-                Console.WriteLine($"Entranador {start.GetListTrainer()[1].Name} empieza");
+                Console.WriteLine($"Entranador {start.listTrainer[1].Name} empieza");
                     do
                 {
-                    Console.WriteLine($"Entrenador {start.GetListTrainer()[0].Name}!!!");
+                    Console.WriteLine($"Entrenador {start.listTrainer[0].Name}!!!");
                     Console.Write("Ingresa el pokemon para la batalla: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon1);
 
@@ -58,7 +67,7 @@ namespace Senamon
 
                 do
                 {
-                    Console.WriteLine($"Entrenador {start.GetListTrainer()[1].Name}!!!");
+                    Console.WriteLine($"Entrenador {start.listTrainer[1].Name}!!!");
                     Console.Write("Ingresa el pokemon para la batalla: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon2);
 
@@ -70,16 +79,16 @@ namespace Senamon
                 entrenador1Start = false;
             }
 
-            Senamon senamon1 = start.GetListTrainer()[0].GetVectSenamon()[pokemon1];
-            Senamon senamon2 = start.GetListTrainer()[1].GetVectSenamon()[pokemon2];
+            Senamon senamon1 = start.listTrainer[0].GetVectSenamon()[pokemon1];
+            Senamon senamon2 = start.listTrainer[1].GetVectSenamon()[pokemon2];
 
-            Trainer entrenador1 = start.GetListTrainer()[0];
-            Trainer entrenador2 = start.GetListTrainer()[1];
+            Trainer entrenador1 = start.listTrainer[0];
+            Trainer entrenador2 = start.listTrainer[1];
 
             int turno = 0;
             int VictoriasEnt1 = 0, VictoriasEnt2 = 2;
-            int victoriaEnt1 = start.GetListTrainer()[0].WonBattles;
-            int victoriaEnt2 = start.GetListTrainer()[1].WonBattles;
+            int victoriaEnt1 = start.listTrainer[0].WonBattles;
+            int victoriaEnt2 = start.listTrainer[1].WonBattles;
 
             while (VictoriasEnt1 < 3 || VictoriasEnt2 < 3)
             {
@@ -120,7 +129,7 @@ namespace Senamon
                     start.listTrainer[0].ShowTeamSenamon();
                     do
                     {
-                        Console.WriteLine($"Entrenador {start.GetListTrainer()[0].Name}!!!");
+                        Console.WriteLine($"Entrenador {start.listTrainer[0].Name}!!!");
                         Console.Write("Ingresa otro pokemon para la batalla: ");
                         _ = int.TryParse(Console.ReadLine(), out pokemon1);
 
@@ -128,6 +137,8 @@ namespace Senamon
                             Console.WriteLine("Error, vuelve a ingresar el valor");
                         
                     } while (pokemon1 < 0 || pokemon1 > maxLength);
+
+                    senamon1 = start.listTrainer[0].GetVectSenamon()[pokemon1];
 
                 }
                 else if(senamon2.Health <= 0)
@@ -138,7 +149,7 @@ namespace Senamon
 
                     do
                     {
-                        Console.WriteLine($"Entrenador {start.GetListTrainer()[1].Name}!!!");
+                        Console.WriteLine($"Entrenador {start.listTrainer[1].Name}!!!");
                         Console.Write("Ingresa otro pokemon para la batalla: ");
                         _ = int.TryParse(Console.ReadLine(), out pokemon2);
 
@@ -147,6 +158,7 @@ namespace Senamon
                         
                     } while (pokemon2 < 0 || pokemon2 > maxLength);
 
+                    senamon2 = start.listTrainer[1].GetVectSenamon()[pokemon2];
                 }                    
             }
 

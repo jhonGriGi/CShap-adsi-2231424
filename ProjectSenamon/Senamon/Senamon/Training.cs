@@ -5,19 +5,20 @@ namespace Senamon
 {
     class Training
     {
-        public Start start = new Start();
+        // public Start start = new Start();
 
         public Training() {}
 
         public void TrainingStart() 
         {
+            Start start = new Start();
             int EXPentrenador1 = start.GetListTrainer()[0].Experience;
             int EXPentrenador2 = start.GetListTrainer()[1].Experience;
             int entrenamiento1, entrenamiento2, opcion, pokemon;
 
             if(EXPentrenador1 >= 200)
             {
-                start.GetListTrainer()[0].ShowTeamSenamon();
+                start.listTrainer[0].ShowTeamSenamon();
                 Console.WriteLine("Tienes experiencia suficiente para entrenar!!!");
 
                 Console.WriteLine("\nIngresa el pokemon a entrenar");
@@ -27,9 +28,9 @@ namespace Senamon
                     Console.Write("   >>>Eleccion: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon);
 
-                    if(pokemon < 0 || pokemon > start.GetListTrainer()[0].GetVectSenamon().Length)
+                    if(pokemon < 0 || pokemon > 5)
                         Console.WriteLine("Error, vuelva a ingresar el valor");
-                } while (pokemon < 0 || pokemon > start.GetListTrainer()[0].GetVectSenamon().Length);
+                } while (pokemon < 0 || pokemon > 5);
 
                 
                 do
@@ -57,25 +58,25 @@ namespace Senamon
                     if (opcion == 1)
                     {
                         EXPentrenador1 -= 200;
-                        start.GetListTrainer()[0].GetVectSenamon()[pokemon].Health += 20;
+                        start.listTrainer[0].GetVectSenamon()[pokemon].Health += 20;
                         Console.WriteLine("Senamon entrenado!!!");
                     }
                     else
                     {
                         EXPentrenador1 -= 200;
-                        start.GetListTrainer()[0].GetVectSenamon()[pokemon].Attack += 20;
+                        start.listTrainer[0].GetVectSenamon()[pokemon].Attack += 20;
                         Console.WriteLine("Senamon entrenado!!!");
                     }
                 }
             }
             else 
             {
-                Console.WriteLine($"Entrenador {start.GetListTrainer()[0].Name}, No tienes suficiente experiencia para entrenar");
+                Console.WriteLine($"Entrenador {start.listTrainer[0].Name}, No tienes suficiente experiencia para entrenar");
             }
 
             if(EXPentrenador2 >= 200)
             {
-                start.GetListTrainer()[1].ShowTeamSenamon();
+                start.listTrainer[1].ShowTeamSenamon();
                 Console.WriteLine("Tienes experiencia suficiente para entrenar!!!");
 
 
@@ -86,9 +87,9 @@ namespace Senamon
                     Console.Write("   >>>Eleccion: ");
                     _ = int.TryParse(Console.ReadLine(), out pokemon);
 
-                    if(pokemon < 0 || pokemon > start.GetListTrainer()[1].GetVectSenamon().Length)
+                    if(pokemon < 0 || pokemon > 5)
                         Console.WriteLine("Error, vuelva a ingresar el valor");
-                } while (pokemon < 0 || pokemon > start.GetListTrainer()[1].GetVectSenamon().Length);
+                } while (pokemon < 0 || pokemon > 5);
 
                 
                 do
@@ -116,21 +117,21 @@ namespace Senamon
                     if (opcion == 1)
                     {
                         EXPentrenador2 -= 200;
-                        start.GetListTrainer()[1].GetVectSenamon()[pokemon].Health += 20;
+                        start.listTrainer[1].GetVectSenamon()[pokemon].Health += 20;
                         Console.WriteLine("Senamon entrenado!!!");
                     }
                     else
                     {
 
                         EXPentrenador2 -= 200;
-                        start.GetListTrainer()[1].GetVectSenamon()[pokemon].Attack += 20;
+                        start.listTrainer[1].GetVectSenamon()[pokemon].Attack += 20;
                         Console.WriteLine("Senamon entrenado!!!");
                     }
                 }
             }
             else 
             {
-                Console.WriteLine($"Entrenador {start.GetListTrainer()[1].Name}, No tienes suficiente experiencia para entrenar");
+                Console.WriteLine($"Entrenador {start.listTrainer[1].Name}, No tienes suficiente experiencia para entrenar");
             }
         }
     }
