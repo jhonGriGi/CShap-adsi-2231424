@@ -58,6 +58,7 @@ namespace Senamon
                 Console.WriteLine($"   >>>Level: {this.VectSenamon[i].Level}");
                 Console.WriteLine($"   >>>Health: {this.VectSenamon[i].Health}");
                 Console.WriteLine($"   >>>Attack: {this.VectSenamon[i].Attack}");
+                Console.WriteLine($"   >>>Description: {this.VectSenamon[i].Description}");
                 Console.WriteLine("------------------------------------------");
             }
 
@@ -72,7 +73,7 @@ namespace Senamon
             } while (change < 0 || change > this.VectSenamon.Length);
             
             _asignamentSenamon.ShowAsignamentSenamon();
-            
+
             do
             {
                 Console.Write("Ingresa el numero del nuevo senamon para tu equipo: ");
@@ -88,9 +89,9 @@ namespace Senamon
 
         public void ShowTeamSenamon()
         {
-            foreach (var senamon in this.VectSenamon)
+            for(int i = 0; i < this.VectSenamon.Length; i++)
             {
-                Console.WriteLine($"   >>>>Name: {senamon.Name}");
+                Console.WriteLine($"   >>>>Senamon {i}: Nombre: {this.VectSenamon[i].Name}");
             }
         }
     }

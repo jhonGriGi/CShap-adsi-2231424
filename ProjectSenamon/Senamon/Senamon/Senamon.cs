@@ -13,7 +13,7 @@ namespace Senamon
         public int Energy { get; set; }
         public string Description { get; set; }
 
-        public Senamon(string name, int lvl, string type, float weight, int health, int attack, int phase)
+        public Senamon(string name, int lvl, string type, float weight, int health, int attack, int phase, string description)
         {
             this.Name = name;
             this.Level = lvl;
@@ -22,16 +22,7 @@ namespace Senamon
             this.Health = health;
             this.Attack = attack;
             this.Phase = phase;
+            this.Description = description;
         }
-
-        // public List<Senamon> GetListSenamon()
-        // {
-        //     return this.listSenamon;
-        // }
-
-        // public void setListSenamon(Senamon senamon)
-        // {
-        //     this.listSenamon.Add(senamon);
-        // }
     }
 }
