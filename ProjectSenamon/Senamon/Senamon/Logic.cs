@@ -50,9 +50,73 @@ namespace Senamon
 
         public void TrainingSenamon(int indexTrainer)
         {
+            int trainSenamon, typeTraining, trainingConfirm;
+
             if(this.ListTrainer[indexTrainer].Experience > 200)
             {
-                
+                Console.WriteLine($"\nEntrenador {this.ListTrainer[indexTrainer].Name}.");
+                Console.WriteLine("Puedes entrenar a un pokemon!!!");
+
+                Console.WriteLine("\nElige el pokemon a entrenar");
+                this.ListTrainer[indexTrainer].ShowTeamSenamon();
+
+                do
+                {
+                    Console.Write("Ingresa el numero del Senamon a entrenar: ");
+                    _ = int.TryParse(Console.ReadLine(), out trainSenamon);
+
+                    if(trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length)
+                        Console.WriteLine("Error, vuelve a ingresar el valor");
+
+                } while(trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length);
+
+
+                do
+                {
+                    Console.WriteLine("-------------------------------------\n");
+                    Console.Write("Ingresa (1) si deseas entrenar o (2) para no: ");
+                    _ = int.TryParse(Console.ReadLine(), out trainingConfirm);
+
+                    if (trainingConfirm <= 0 || trainingConfirm > 2)
+                        Console.WriteLine("Error, vuelve a introducir el valor");
+                } while (trainingConfirm <= 0 || trainingConfirm > 2);
+
+                if(trainingConfirm == 1)
+                {
+                    do
+                    {
+                        Console.Write("Ingrese 1 si quiere entrenar la salud,\nIngrese 2 si quiere entrenar el ataque: ");
+                        _ = int.TryParse(Console.ReadLine(), out typeTraining);
+
+                        if(typeTraining < 0)
+                            Console.WriteLine("Error, vuelve a ingresar el valor");
+                    } while(typeTraining < 0);
+
+                    if(typeTraining == 1)
+                    {
+                        this.ListTrainer[indexTrainer].Experience -= 200;
+                        this.ListTrainer[indexTrainer].GetVectSenamon()[trainSenamon].Health += 20;
+                        Console.WriteLine($"El pokemon {this.ListTrainer[indexTrainer].GetVectSenamon()[trainSenamon].Name} ha sido entrenado!!!");
+                    }
+                    else 
+                    {
+                        this.ListTrainer[indexTrainer].Experience -= 200;
+                        this.ListTrainer[indexTrainer].GetVectSenamon()[trainSenamon].Attack += 20;
+                        Console.WriteLine($"El pokemon {this.ListTrainer[indexTrainer].GetVectSenamon()[trainSenamon].Name} ha sido entrenado!!!");
+                    }
+                } 
+                else 
+                {
+                    Console.WriteLine($"\nEntrenador {this.ListTrainer[indexTrainer].Name}.");
+                    Console.WriteLine("Ha decidido continuar la pelea");
+                }
+            }
+            else
+            {
+                Console.WriteLine("----------------------------------------------------");
+                Console.WriteLine($"\nEntrenador {this.ListTrainer[indexTrainer].Name}.");
+                Console.WriteLine("No tienes suficiente experiencia para entrenar");
+                Console.WriteLine("----------------------------------------------------");
             }
         }
     }
