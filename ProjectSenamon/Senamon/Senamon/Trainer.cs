@@ -91,7 +91,8 @@ namespace Senamon
         {
             for(int i = 0; i < this.VectSenamon.Length; i++)
             {
-                Console.WriteLine($"   >>>>Senamon {i}: Nombre: {this.VectSenamon[i].Name}");
+                if(this.GetVectSenamon()[i].Health > 0)
+                    Console.WriteLine($"   >>>>Senamon {i}: Nombre: {this.VectSenamon[i].Name}");
             }
         }
     }
