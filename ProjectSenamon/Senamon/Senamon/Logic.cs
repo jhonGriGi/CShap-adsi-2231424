@@ -194,14 +194,17 @@ namespace Senamon
         public void BasicBattle()
         {
             int victory1 = 0, victory2 = 0, fightVictory1 = 0, fightVictory2 = 0;
-            int indexSenamon1 = ChooseSenamon(0);
-            int indexSenamon2 = ChooseSenamon(1);
+            int indexSenamon1;
+            int indexSenamon2; 
             bool firstTrainer = GetRandomNumber();
 
             if (firstTrainer)
             {
                 while (victory1 < 3 && victory2 < 3) 
                 { 
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon2 = ChooseSenamon(1);
+
                     for (int i = 0; i < 2; i++)
                     {
                         TrainingSenamon(i);
@@ -223,6 +226,9 @@ namespace Senamon
             {
                 while (victory1 < 3 && victory2 < 3) 
                 { 
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon2 = ChooseSenamon(1);
+
                     for (int i = 0; i < 2; i++)
                     {
                         TrainingSenamon(i);
@@ -262,6 +268,9 @@ namespace Senamon
             {
                 while (victory1 < 3 && victory2 < 3) 
                 {
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon2 = ChooseSenamon(1);
+
                     for (int i = 0; i < 2; i++)
                     {
                         TrainingSenamon(i);
@@ -282,6 +291,9 @@ namespace Senamon
             {
                 while (victory1 < 3 && victory2 < 3) 
                 {
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon2 = ChooseSenamon(1);
+
                     for (int i = 0; i < 2; i++)
                     {
                         TrainingSenamon(i);
@@ -303,6 +315,9 @@ namespace Senamon
             {
                 while (victory3 < 3 && victory4 < 3)
                 {
+                    indexSenamon3 = ChooseSenamon(2);
+                    indexSenamon4 = ChooseSenamon(3);
+
                     for (int i = 2; i <= 3; i++)
                     {
                         TrainingSenamon(i);
@@ -323,6 +338,9 @@ namespace Senamon
             {
                 while (victory3 < 3 && victory4 < 3)
                 {
+                    indexSenamon3 = ChooseSenamon(2);
+                    indexSenamon4 = ChooseSenamon(3);
+
                     for (int i = 2; i <= 3; i++)
                     {
                         TrainingSenamon(i);
@@ -345,6 +363,9 @@ namespace Senamon
             {
                 while (victory1 < 3 && victory4 < 3)
                 {
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon4 = ChooseSenamon(3);
+
                     TrainingSenamon(0);
                     this.ListTrainer[0].ChangeSenamon();
                     TrainingSenamon(3);
@@ -363,6 +384,9 @@ namespace Senamon
             {
                 while (victory1 < 3 && victory4 < 3)
                 {
+                    indexSenamon1 = ChooseSenamon(0);
+                    indexSenamon4 = ChooseSenamon(3);
+
                     TrainingSenamon(0);
                     this.ListTrainer[0].ChangeSenamon();
                     TrainingSenamon(3);
@@ -383,6 +407,9 @@ namespace Senamon
             { 
                 while (victory2 < 3 && victory3 < 3)
                 {
+                    indexSenamon2 = ChooseSenamon(1);
+                    indexSenamon3 = ChooseSenamon(2);
+
                     for (int i = 1; i <= 2; i++)
                     {
                         TrainingSenamon(i);
@@ -403,6 +430,9 @@ namespace Senamon
             {
                 while (victory2 < 3 && victory3 < 3)
                 {
+                    indexSenamon2 = ChooseSenamon(1);
+                    indexSenamon3 = ChooseSenamon(2);
+                    
                     for (int i = 1; i <= 2; i++)
                     {
                         TrainingSenamon(i);
