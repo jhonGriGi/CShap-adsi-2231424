@@ -150,10 +150,10 @@ namespace Senamon
                         Console.Write("Ingresa el numero del nuevo senamon para tu equipo: ");
                         _ = int.TryParse(Console.ReadLine(), out option);
 
-                        if (option < 0 || option > _asignamentSenamon.GetListSenamon().Count -1)
+                        if (option < 0 || option > _asignamentSenamon.GetListSenamon().Count - 1)
                             Console.WriteLine("Error, vuelve a introducir el valor");
                         
-                    } while (option < 0 || option > _asignamentSenamon.GetListSenamon().Count -1);
+                    } while (option < 0 || option > _asignamentSenamon.GetListSenamon().Count - 1);
 
                     this.ListTrainer[indexTrainer].GetVectSenamon()[i] = _asignamentSenamon.GetListSenamon()[option];
                 }
@@ -203,16 +203,18 @@ namespace Senamon
                 while (victory1 < 3 && victory2 < 3) 
                 { 
                     for (int i = 0; i < 2; i++)
+                    {
                         TrainingSenamon(i);
-                        
-                    
-                        fightVictory1 = TypeBattle(0, indexSenamon1, 1, indexSenamon2);
-                        fightVictory2 = TypeBattle(1, indexSenamon2, 0, indexSenamon1);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
 
-                        if (fightVictory1 < 3)
-                            victory1++;
-                        else if (fightVictory2 < 3)
-                            victory2++;
+                    fightVictory1 = TypeBattle(0, indexSenamon1, 1, indexSenamon2);
+                    fightVictory2 = TypeBattle(1, indexSenamon2, 0, indexSenamon1);
+
+                    if (fightVictory1 < 3)
+                        victory1++;
+                    else if (fightVictory2 < 3)
+                        victory2++;
                     
                     
                 }
@@ -222,7 +224,10 @@ namespace Senamon
                 while (victory1 < 3 && victory2 < 3) 
                 { 
                     for (int i = 0; i < 2; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
                         
                     
                     fightVictory2 = TypeBattle(1, indexSenamon2, 0, indexSenamon1);
@@ -232,8 +237,7 @@ namespace Senamon
                         victory1++;
                     else if (fightVictory2 < 3)
                         victory2++;
-                    
-                        
+                          
                 }   
 
             }
@@ -259,7 +263,10 @@ namespace Senamon
                 while (victory1 < 3 && victory2 < 3) 
                 {
                     for (int i = 0; i < 2; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
                         
                     
                     fightVictory1 = TypeBattle(0, indexSenamon1, 1, indexSenamon2);
@@ -276,7 +283,10 @@ namespace Senamon
                 while (victory1 < 3 && victory2 < 3) 
                 {
                     for (int i = 0; i < 2; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
                         
                     
                     fightVictory2 = TypeBattle(1, indexSenamon2, 0, indexSenamon1);
@@ -294,7 +304,10 @@ namespace Senamon
                 while (victory3 < 3 && victory4 < 3)
                 {
                     for (int i = 2; i <= 3; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
 
                     
                     fightVictory3 = TypeBattle(2, indexSenamon3, 3, indexSenamon4);
@@ -311,7 +324,10 @@ namespace Senamon
                 while (victory3 < 3 && victory4 < 3)
                 {
                     for (int i = 2; i <= 3; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
 
                     
                     fightVictory4 = TypeBattle(3, indexSenamon4, 2, indexSenamon3);
@@ -330,15 +346,17 @@ namespace Senamon
                 while (victory1 < 3 && victory4 < 3)
                 {
                     TrainingSenamon(0);
+                    this.ListTrainer[0].ChangeSenamon();
                     TrainingSenamon(3);
+                    this.ListTrainer[3].ChangeSenamon();
 
-                        fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
-                        fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
+                    fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
+                    fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
 
-                        if (fightVictory1 < 3)
-                            victory1++;
-                        else if (fightVictory4 < 3)
-                            victory4++;
+                    if (fightVictory1 < 3)
+                        victory1++;
+                    else if (fightVictory4 < 3)
+                        victory4++;
                 }
             }
             else 
@@ -346,7 +364,9 @@ namespace Senamon
                 while (victory1 < 3 && victory4 < 3)
                 {
                     TrainingSenamon(0);
+                    this.ListTrainer[0].ChangeSenamon();
                     TrainingSenamon(3);
+                    this.ListTrainer[3].ChangeSenamon();
 
                     fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
                     fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
@@ -364,7 +384,10 @@ namespace Senamon
                 while (victory2 < 3 && victory3 < 3)
                 {
                     for (int i = 1; i <= 2; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
 
                 
                     fightVictory2 = TypeBattle(1, indexSenamon2, 2, indexSenamon3);
@@ -381,7 +404,11 @@ namespace Senamon
                 while (victory2 < 3 && victory3 < 3)
                 {
                     for (int i = 1; i <= 2; i++)
+                    {
                         TrainingSenamon(i);
+                        this.ListTrainer[i].ChangeSenamon();
+                    }
+
 
                     fightVictory3 = TypeBattle(2, indexSenamon3, 1, indexSenamon2);
                     fightVictory2 = TypeBattle(1, indexSenamon2, 2, indexSenamon3);
