@@ -58,20 +58,6 @@ namespace Senamon
                 Console.WriteLine($"\nEntrenador {this.ListTrainer[indexTrainer].Name}.");
                 Console.WriteLine("Puedes entrenar a un pokemon!!!");
 
-                Console.WriteLine("\nElige el pokemon a entrenar");
-                this.ListTrainer[indexTrainer].ShowTeamSenamon();
-
-                do
-                {
-                    Console.Write("Ingresa el numero del Senamon a entrenar: ");
-                    _ = int.TryParse(Console.ReadLine(), out trainSenamon);
-
-                    if (trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length)
-                        Console.WriteLine("Error, vuelve a ingresar el valor");
-
-                } while (trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length);
-
-
                 do
                 {
                     Console.WriteLine("-------------------------------------\n");
@@ -84,6 +70,19 @@ namespace Senamon
 
                 if (trainingConfirm == 1)
                 {
+                    Console.WriteLine("\nElige el pokemon a entrenar");
+                    this.ListTrainer[indexTrainer].ShowTeamSenamon();
+
+                    do
+                    {
+                        Console.Write("Ingresa el numero del Senamon a entrenar: ");
+                        _ = int.TryParse(Console.ReadLine(), out trainSenamon);
+
+                        if (trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length)
+                            Console.WriteLine("Error, vuelve a ingresar el valor");
+
+                    } while (trainSenamon < 0 && trainSenamon > this.ListTrainer[indexTrainer].GetVectSenamon().Length);
+
                     do
                     {
                         Console.Write("Ingrese 1 si quiere entrenar la salud,\nIngrese 2 si quiere entrenar el ataque: ");
