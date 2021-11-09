@@ -47,6 +47,8 @@ namespace Senamon
         {
             int option, change, answerChangeSenamon, changeSenamon;
             
+            ShowTeamSenamon();
+            
             do
             {
                 Console.Write("Ingrese 1 si quiere cambiar un Senamon\nIngrese 2 si no quiere cambiar un Senamon: ");
@@ -61,6 +63,8 @@ namespace Senamon
                 do
                 {
                     Console.WriteLine("Selecciona el Senamon de tu equipo que quieres intercambiar");
+
+                    ShowTeamSenamon();
 
                     for (int i = 0; i < 5; i++)
                     {
@@ -98,13 +102,15 @@ namespace Senamon
                     } while (option < 0 || option > _asignamentSenamon.GetListSenamon().Count - 1);
                     
                     this.VectSenamon[change] = _asignamentSenamon.GetListSenamon()[option];
+
+                    ShowTeamSenamon();
                     
                     Console.Write("Ingresa 1 si quieres cambiar otro senamon, de lo contrario ingresa 2: ");
                     _ = int.TryParse(Console.ReadLine(), out changeSenamon);
 
                     if (changeSenamon < 0 && changeSenamon > 2)
                         Console.WriteLine("Error, vuelve a ingresar el valor");
-                } while (changeSenamon < 0 && changeSenamon > 2);
+                } while (changeSenamon == 1);
             }
         }
 
