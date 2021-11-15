@@ -158,6 +158,7 @@ namespace Senamon
                 }
             }
         }
+
         public int ChooseSenamon(int indexTrainer)
         {
             int indexSenamon; 
@@ -176,7 +177,7 @@ namespace Senamon
                 _ = int.TryParse(Console.ReadLine(), out indexSenamon);
 
                 if (indexSenamon < 0 || indexSenamon > 5)
-                        Console.WriteLine("Error, vuelve a ingresar el valor");
+                    Console.WriteLine("Error, vuelve a ingresar el valor");
             } while (indexSenamon < 0 || indexSenamon > 5);
 
             return indexSenamon;
@@ -290,14 +291,12 @@ namespace Senamon
             bool firstTrainer3 = GetRandomNumber();
             bool firstTrainer4 = GetRandomNumber();
 
-            if (firstTrainer1)
+            do
             {
-                do
+                if (firstTrainer1)
                 {
                     victory1 = 0;
                     victory2 = 0;
-
-                    repeatBattle = 0;
 
                     while (victory1 < 3 && victory2 < 3) 
                     {
@@ -319,26 +318,11 @@ namespace Senamon
                         else if (fightVictory2 < 3)
                             victory2++;
                     }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-            else
-            {
-                do
+                }
+                else
                 {
                     victory1 = 0;
                     victory2 = 0;
-
-                    repeatBattle = 0;
 
                     while (victory1 < 3 && victory2 < 3) 
                     {
@@ -360,191 +344,120 @@ namespace Senamon
                         else if (fightVictory2 < 3)
                             victory2++;
                     }
+                }
 
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-
-            if (firstTrainer2)
-            {
-                do
+                if (firstTrainer2)
                 {
-                    victory3 = 0;
-                    victory4 = 0;
-
-                    repeatBattle = 0;
-
-                    while (victory3 < 3 && victory4 < 3)
-                    {
-                        indexSenamon3 = ChooseSenamon(2);
-                        indexSenamon4 = ChooseSenamon(3);
-
-                        for (int i = 2; i <= 3; i++)
-                        {
-                            TrainingSenamon(i);
-                            this.ListTrainer[i].ChangeSenamon();
-                        }
-
-                        
-                        fightVictory3 = TypeBattle(2, indexSenamon3, 3, indexSenamon4);
-                        fightVictory4 = TypeBattle(3, indexSenamon4, 2, indexSenamon3);
-
-                        if (fightVictory3 < 3)
-                            victory3++;
-                        else if (fightVictory4 < 4)
-                            victory4++;
-                    }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-            else 
-            {
-                do
-                {
-                    victory3 = 0;
-                    victory4 = 0;
-
-                    repeatBattle = 0;
-
-                    while (victory3 < 3 && victory4 < 3)
-                    {
-                        indexSenamon3 = ChooseSenamon(2);
-                        indexSenamon4 = ChooseSenamon(3);
-
-                        for (int i = 2; i <= 3; i++)
-                        {
-                            TrainingSenamon(i);
-                            this.ListTrainer[i].ChangeSenamon();
-                        }
-
-                        
-                        fightVictory4 = TypeBattle(3, indexSenamon4, 2, indexSenamon3);
-                        fightVictory3 = TypeBattle(2, indexSenamon3, 3, indexSenamon4);
-
-                        if (fightVictory3 < 3)
-                            victory3++;
-                        else if (fightVictory4 < 4)
-                            victory4++;
-                        
-                    }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-
-            if (firstTrainer3)
-            {
-                do
-                {
-                    victory1 = 0;
-                    victory4 = 0;
-
-                    repeatBattle = 0;
-
-                    while (victory1 < 3 && victory4 < 3)
-                    {
-                        indexSenamon1 = ChooseSenamon(0);
-                        indexSenamon4 = ChooseSenamon(3);
-
-                        TrainingSenamon(0);
-                        this.ListTrainer[0].ChangeSenamon();
-                        TrainingSenamon(3);
-                        this.ListTrainer[3].ChangeSenamon();
-
-                        fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
-                        fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
-
-                        if (fightVictory1 < 3)
-                            victory1++;
-                        else if (fightVictory4 < 3)
-                            victory4++;
-                    }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-            else 
-            {
-                do
-                {
-                    victory1 = 0;
-                    victory4 = 0;
-
-                    repeatBattle = 0;
-
-                    while (victory1 < 3 && victory4 < 3)
-                    {
-                        indexSenamon1 = ChooseSenamon(0);
-                        indexSenamon4 = ChooseSenamon(3);
-
-                        TrainingSenamon(0);
-                        this.ListTrainer[0].ChangeSenamon();
-                        TrainingSenamon(3);
-                        this.ListTrainer[3].ChangeSenamon();
-
-                        fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
-                        fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
-
-                        if (fightVictory1 < 3)
-                            victory1++;
-                        else if (fightVictory4 < 3)
-                            victory4++;
-                    }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
                     
-            }
+                    victory3 = 0;
+                    victory4 = 0;
 
-            if(firstTrainer4)
-            { 
-                do
+
+                    while (victory3 < 3 && victory4 < 3)
+                    {
+                        indexSenamon3 = ChooseSenamon(2);
+                        indexSenamon4 = ChooseSenamon(3);
+
+                        for (int i = 2; i <= 3; i++)
+                        {
+                            TrainingSenamon(i);
+                            this.ListTrainer[i].ChangeSenamon();
+                        }
+                        
+                        fightVictory3 = TypeBattle(2, indexSenamon3, 3, indexSenamon4);
+                        fightVictory4 = TypeBattle(3, indexSenamon4, 2, indexSenamon3);
+
+                        if (fightVictory3 < 3)
+                            victory3++;
+                        else if (fightVictory4 < 4)
+                            victory4++;
+                    }
+                }
+                else 
                 {
+                    victory3 = 0;
+                    victory4 = 0;
+
+                    while (victory3 < 3 && victory4 < 3)
+                    {
+                        indexSenamon3 = ChooseSenamon(2);
+                        indexSenamon4 = ChooseSenamon(3);
+
+                        for (int i = 2; i <= 3; i++)
+                        {
+                            TrainingSenamon(i);
+                            this.ListTrainer[i].ChangeSenamon();
+                        }
+
+                        
+                        fightVictory4 = TypeBattle(3, indexSenamon4, 2, indexSenamon3);
+                        fightVictory3 = TypeBattle(2, indexSenamon3, 3, indexSenamon4);
+
+                        if (fightVictory3 < 3)
+                            victory3++;
+                        else if (fightVictory4 < 4)
+                            victory4++;
+                        
+                    }
+                }
+
+                if (firstTrainer3)
+                {
+                    victory1 = 0;
+                    victory4 = 0;
+
+
+                    while (victory1 < 3 && victory4 < 3)
+                    {
+                        indexSenamon1 = ChooseSenamon(0);
+                        indexSenamon4 = ChooseSenamon(3);
+
+                        TrainingSenamon(0);
+                        this.ListTrainer[0].ChangeSenamon();
+                        TrainingSenamon(3);
+                        this.ListTrainer[3].ChangeSenamon();
+
+                        fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
+                        fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
+
+                        if (fightVictory1 < 3)
+                            victory1++;
+                        else if (fightVictory4 < 3)
+                            victory4++;
+                    }
+                }
+                else 
+                {
+                    victory1 = 0;
+                    victory4 = 0;
+
+
+                    while (victory1 < 3 && victory4 < 3)
+                    {
+                        indexSenamon1 = ChooseSenamon(0);
+                        indexSenamon4 = ChooseSenamon(3);
+
+                        TrainingSenamon(0);
+                        this.ListTrainer[0].ChangeSenamon();
+                        TrainingSenamon(3);
+                        this.ListTrainer[3].ChangeSenamon();
+
+                        fightVictory4 = TypeBattle(3, indexSenamon4, 0, indexSenamon1);
+                        fightVictory1 = TypeBattle(0, indexSenamon1, 3, indexSenamon4);
+
+                        if (fightVictory1 < 3)
+                            victory1++;
+                        else if (fightVictory4 < 3)
+                            victory4++;
+                    }
+                        
+                }
+
+                if(firstTrainer4)
+                { 
                     victory2 = 0; 
                     victory3 = 0;
 
-                    repeatBattle = 0;
 
                     while (victory2 < 3 && victory3 < 3)
                     {
@@ -566,26 +479,12 @@ namespace Senamon
                         else if (fightVictory3 < 3)
                             victory3++;
                     }
-
-                    do
-                    {
-                        Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
-                        _ = int.TryParse(Console.ReadLine(), out repeatBattle);
-
-                        if (repeatBattle < 0 || repeatBattle > 2)
-                            Console.WriteLine("Error, vuelve a ingresar el valor");
-                    } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
-            else 
-            {
-                do
+                }
+                else 
                 {
                     victory2 = 0;
                     victory3 = 0;
 
-                    repeatBattle = 0;
 
                     while (victory2 < 3 && victory3 < 3)
                     {
@@ -607,8 +506,9 @@ namespace Senamon
                         else if (fightVictory3 < 3)
                             victory3++;
                     }
+                }
 
-                    do
+                do
                     {
                         Console.Write("Ingresa 1 si quieres pelear otra vez, de lo contrario ingresa 2: ");
                         _ = int.TryParse(Console.ReadLine(), out repeatBattle);
@@ -616,11 +516,9 @@ namespace Senamon
                         if (repeatBattle < 0 || repeatBattle > 2)
                             Console.WriteLine("Error, vuelve a ingresar el valor");
                     } while (repeatBattle < 0 || repeatBattle > 2);
-
-                } while (repeatBattle == 1);
-            }
+            } while (repeatBattle == 1);
         }
-
+            
         // metodo para las bonificaciones de dmg 
         public int TypeBattle(int indexTrainer1, int indexSenamon1, int indexTrainer2, int indexSenamon2)
         {
