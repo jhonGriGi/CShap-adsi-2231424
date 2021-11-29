@@ -13,7 +13,7 @@ namespace Senamon
         public Senamon[] VectSenamon = new Senamon[5];
         
         // Importaciones de clases
-        private AsignamentSenamon _asignamentSenamon = new AsignamentSenamon();
+        private AsignamentSenamon _asignamentSenamon;
 
         // Constructor
 
@@ -26,6 +26,8 @@ namespace Senamon
         public void SetVectSenamon()
         {
             int option;
+
+            _asignamentSenamon = new AsignamentSenamon();
 
             for (int i = 0; i < 5; i++)
             {
@@ -46,6 +48,8 @@ namespace Senamon
         public void ChangeSenamon()
         {
             int option, change, answerChangeSenamon, changeSenamon;
+
+            _asignamentSenamon = new AsignamentSenamon();
             
             ShowTeamSenamon();
             
